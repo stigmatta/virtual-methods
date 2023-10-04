@@ -49,6 +49,6 @@ void Automobile:: init()
 }
 void Automobile::print()
 {
-	Transport::print();const
+	Transport::print()const
 	cout << "License plate: " << license_plate << endl << "Transmission type: " << transmission_type << endl << "Engine capacity: " << engine_capacity << endl;
 }
