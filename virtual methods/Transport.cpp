@@ -8,19 +8,19 @@ Transport::Transport()
 Transport::Transport(string fuel, string model, float max_speed, unsigned int wheels) :fuel(fuel), model(model), max_speed(max_speed), wheels(wheels)
 {
 }
-string Transport:: getFuel()
+string Transport:: getFuel()const
 {
 	return fuel;
 }
-string Transport:: getModel()
+string Transport:: getModel()const
 {
 	return model;
 }
-float Transport:: getMaxSpeed()
+float Transport:: getMaxSpeed()const
 {
 	return max_speed;
 }
-unsigned int Transport::getWheels()
+unsigned int Transport::getWheels()const
 {
 	return wheels;
 }
@@ -51,7 +51,7 @@ void Transport:: init()
 	cout << "How many wheels: " << endl;
 	cin >> wheels;
 }
-void Transport::print()
+void Transport::print()const
 {
 	cout << "Type of fuel: " << fuel << endl << "Model: " << model << endl << "Max speed: " << max_speed << endl << "Number of wheels: " << wheels << endl;
 }
