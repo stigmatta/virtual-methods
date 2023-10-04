@@ -10,15 +10,15 @@ class Ship :public Transport
 public:
 	Ship();
 	Ship(string fuel, string model, float max_speed, unsigned int wheels, string ship_type, unsigned int length, unsigned int width, unsigned int lift_capacity);
-	string getShipType();
-	unsigned int getLength();
-	unsigned int getWidth();
-	unsigned int getLiftCapacity();
+	string getShipType();const
+	unsigned int getLength();const
+	unsigned int getWidth();const
+	unsigned int getLiftCapacity();const
 	void setShipType(string ship_type);
 	void setLength(unsigned int length);
 	void setWidth(unsigned int width);
 	void setLiftCapacity(unsigned int lift_capacity);
 	void init();
-	void print();
+	void print();const
 };
 
