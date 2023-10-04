@@ -11,15 +11,15 @@ protected:
 public:
 	Transport();
 	Transport(string fuel, string model, float max_speed, unsigned int wheels);
-	string getFuel();
-	string getModel();
-	float getMaxSpeed();
-	unsigned int getWheels();
+	string getFuel()const;
+	string getModel()const;
+	float getMaxSpeed()const;
+	unsigned int getWheels()const;
 	void setFuel(string fuel);
 	void setModel(string model);
 	void setMaxSpeed(float max_speed);
 	void setWheels(unsigned int wheels);
 	virtual void init();
-	virtual void print();
+	virtual void print()const;
 };
 
