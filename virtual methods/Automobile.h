@@ -10,13 +10,13 @@ class Automobile : public Transport
 public:
 	Automobile();
 	Automobile(string fuel, string model, float max_speed, unsigned int wheels, string license_plate, string transmission_type, unsigned int engine_capacity);
-	string getLicensePlate();
-	string getTransmissionType();
-	unsigned int getEngineCapacity();
+	string getLicensePlate();const
+	string getTransmissionType(); const 
+	unsigned int getEngineCapacity();const
 	void setLicencePlate(string license_plate);
 	void setTransmissionType(string transmission_type);
 	void setEngineCapacity(unsigned int engine_capacity);
 	void init();
-	void print();
+	void print();const
 };
 
