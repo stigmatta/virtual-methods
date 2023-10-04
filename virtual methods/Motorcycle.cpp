@@ -12,15 +12,15 @@ Motorcycle::Motorcycle(string fuel, string model, float max_speed, unsigned int 
 	this->color = color;
 	this->body_type = body_type;
 }
-string Motorcycle::getEngineType()
+string Motorcycle::getEngineType()const
 {
 	return engine_type;
 }
-string Motorcycle::getColor()
+string Motorcycle::getColor()const
 {
 	return color;
 }
-string Motorcycle::getBodyType()
+string Motorcycle::getBodyType()const
 {
 	return body_type;
 }
@@ -46,7 +46,7 @@ void Motorcycle::init()
 	cout << "Body type: " << endl;
 	cin >> body_type;
 }
-void Motorcycle::print()
+void Motorcycle::print()const
 {
 	Transport::print();
 	cout << "Engine type: " << engine_type << endl << "Color: " << color << endl << "Body type: " << body_type << endl;
