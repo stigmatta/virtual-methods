@@ -9,13 +9,13 @@ class Motorcycle : public Transport
 public:
 	Motorcycle();
 	Motorcycle(string fuel, string model, float max_speed, unsigned int wheels, string engine_type,string color,string body_type);
-	string getEngineType();
-	string getColor();
-	string getBodyType();
+	string getEngineType()const;
+	string getColor()const;
+	string getBodyType()const;
 	void setEngineType(string engine_type);
 	void setColor (string color);
 	void setBodyType(string body_type);
 	void init();
-	void print();
+	void print()const;
 };
 
