@@ -15,19 +15,19 @@ Ship::Ship(string fuel, string model, float max_speed, unsigned int wheels, stri
 	this->width = width;
 	this->lift_capacity = lift_capacity;
 }
-string Ship::getShipType()
+string Ship::getShipType()const
 {
 	return ship_type;
 }
-unsigned int Ship::getLength()
+unsigned int Ship::getLength()const
 {
 	return length;
 }
-unsigned int Ship::getWidth()
+unsigned int Ship::getWidth()const
 {
 	return width;
 }
-unsigned int Ship:: getLiftCapacity()
+unsigned int Ship:: getLiftCapacity()const
 {
 	return lift_capacity;
 }
@@ -59,7 +59,7 @@ void Ship:: init()
 	cout << "Lift capacity:" << endl;
 	cin >> lift_capacity;
 }
-void Ship:: print()
+void Ship:: print()const
 {
 	Transport::print();
 	cout << "Ship type: " << ship_type << endl << "Length of the ship: " << length << endl << "Width of the ship: " << width << endl << "Lift capacity: " << lift_capacity << endl;
