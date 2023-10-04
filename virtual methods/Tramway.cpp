@@ -13,15 +13,15 @@ Tramway::Tramway(string fuel, string model, float max_speed, unsigned int wheels
 	this->width = width;
 	this->passenger_capacity = passenger_capacity;
 }
-string Tramway::getTramNumber()
+string Tramway::getTramNumber()const
 {
 	return tram_number;
 } 
-unsigned int Tramway::getLength()
+unsigned int Tramway::getLength()const
 {
 	return length;
 }
-unsigned int Tramway::getWidth()
+unsigned int Tramway::getWidth()const
 {
 	return width;
 }
@@ -57,7 +57,7 @@ void Tramway::init()
 	cout << "Passenger capacity in the tram: " << endl;
 	cin >> passenger_capacity;
 }
-void Tramway::print()
+void Tramway::print()const
 {
 	Transport::print();
 	cout << "Tramway license number: " << tram_number << endl << "Length of the tramway: " << length << endl << "Width of the tramway: " << width << endl << "Passengers capacity: " << passenger_capacity << endl;
