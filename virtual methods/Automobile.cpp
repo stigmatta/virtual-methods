@@ -13,15 +13,15 @@ Automobile::Automobile(string fuel, string model, float max_speed, unsigned int 
 	this->transmission_type = transmission_type;
 	this->engine_capacity = engine_capacity;
 }
-string Automobile::getLicensePlate()
+string Automobile::getLicensePlate()const
 {
 	return license_plate;
 }
-string Automobile::getTransmissionType()
+string Automobile::getTransmissionType()const
 {
 	return transmission_type;
 }
-unsigned int Automobile:: getEngineCapacity()
+unsigned int Automobile:: getEngineCapacity()const
 {
 	return engine_capacity;
 }
@@ -49,6 +49,6 @@ void Automobile:: init()
 }
 void Automobile::print()
 {
-	Transport::print();
+	Transport::print();const
 	cout << "License plate: " << license_plate << endl << "Transmission type: " << transmission_type << endl << "Engine capacity: " << engine_capacity << endl;
 }
